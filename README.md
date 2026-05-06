@@ -18,3 +18,6 @@ Python, Streamlit, XGBoost, SHAP, pandas
 
 ## Status
 Complete — deployable on Streamlit Cloud
+
+## Live App
+Try it here: [sara-noshow-risk.streamlit.app](https://sara-noshow-risk.streamlit.app/)
