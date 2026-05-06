@@ -7,8 +7,8 @@ people who actually need it: schedulers and clinic operations teams.
 
 ## What It Does
 
-Enter six patient details — age, days until appointment, SMS 
-reminder status, scholarship status, hypertension, and diabetes — 
+Enter six patient details- age, days until appointment, SMS 
+reminder status, scholarship status, hypertension, and diabetes,
 and the app instantly returns:
 
 - A no-show probability score (0-100%)
