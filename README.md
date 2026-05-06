@@ -1,7 +1,7 @@
 # Real-Time Patient No-Show Risk Score App
 
 Built this as the natural next step after the no-show prediction 
-model — a model sitting in a notebook isn't useful to anyone 
+model: a model sitting in a notebook isn't useful to anyone 
 outside of data science. Wanted to make it accessible to the 
 people who actually need it: schedulers and clinic operations teams.
 
@@ -12,7 +12,7 @@ reminder status, scholarship status, hypertension, and diabetes —
 and the app instantly returns:
 
 - A no-show probability score (0-100%)
-- A risk category — Low, Moderate, or High
+- A risk category: Low, Moderate, or High
 - A clinical action recommendation based on the risk level
 
 The score updates in real time as you adjust the inputs.
@@ -21,7 +21,7 @@ The score updates in real time as you adjust the inputs.
 
 A 20% no-show rate costs clinics thousands in wasted provider time 
 every week. This tool gives schedulers a simple way to flag 
-high-risk appointments before they happen — so they can prioritize 
+high-risk appointments before they happen so they can prioritize 
 outreach, offer same-day alternatives, or double-book strategically.
 
 No data science background needed to use it.
