@@ -41,13 +41,6 @@ st.markdown("""
         color: #888;
         font-size: 0.9rem;
     }
-    .section-card {
-        background: white;
-        border-radius: 12px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        margin-bottom: 1rem;
-    }
     h1 { color: #1a1a2e; font-weight: 800; }
     .stSelectbox label, .stSlider label {
         font-weight: 600;
@@ -98,19 +91,15 @@ st.markdown("### Patient Details")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown('<div class="section-card">', unsafe_allow_html=True)
     age = st.slider("Patient Age", 0, 100, 45)
     wait_days = st.slider("Days Until Appointment", 0, 180, 7)
     sms = st.selectbox("SMS Reminder Sent?", ["No", "Yes"])
-    st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="section-card">', unsafe_allow_html=True)
     scholarship = st.selectbox("On Welfare Scholarship?", ["No", "Yes"])
     hypertension = st.selectbox("Hypertension?", ["No", "Yes"])
     diabetes = st.selectbox("Diabetes?", ["No", "Yes"])
     gender = st.selectbox("Gender", ["Female", "Male"])
-    st.markdown('</div>', unsafe_allow_html=True)
 
 # prediction
 input_data = pd.DataFrame([{
