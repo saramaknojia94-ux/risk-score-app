@@ -42,9 +42,11 @@ st.markdown("""
         font-size: 0.9rem;
     }
     h1 { color: #1a1a2e; font-weight: 800; }
-    .stSelectbox label, .stSlider label {
-        font-weight: 600;
-        color: #444;
+    .stSelectbox label, .stSlider label,
+    .stSelectbox > label, .stSlider > label,
+    [data-testid="stWidgetLabel"] {
+        font-weight: 600 !important;
+        color: var(--text-color) !important;
     }
     footer { visibility: hidden; }
 </style>
