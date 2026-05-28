@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
-import kagglehub
-import os
 
 st.set_page_config(
     page_title="No-Show Risk Score | Sara Maknojia",
@@ -59,9 +57,7 @@ st.markdown("---")
 
 @st.cache_resource
 def load_model():
-    path = kagglehub.dataset_download("joniarroba/noshowappointments")
-    files = os.listdir(path)
-    df = pd.read_csv(path + '/' + files[0])
+    df = pd.read_csv("KaggleV2-May-2016.csv")
     df = df[df['Age'] >= 0]
     df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'])
     df['AppointmentDay'] = pd.to_datetime(df['AppointmentDay'])
